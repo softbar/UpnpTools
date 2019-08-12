@@ -1,0 +1,33 @@
+{
+    "elements": [
+    	{ "type": "ExpansionPanel", "caption": "Device Settings", "items": [
+		 		{ "type": "ValidationTextBox", "name": "Host", "caption": "Host" },
+		 		{ "type": "ValidationTextBox", "name": "User", "caption": "Username" },
+		 		{ "type": "PasswordTextBox", "name": "Password", "caption": "Password" }
+			]
+	 	}
+   	],
+   	"actions":[
+		 { "name":"method","type":"List", 
+			"add":false,"delete":false,
+			"sort":{ "column":"s","direction":"ascending"},
+			"columns":[
+		  		{"name":"s", "caption":"Service","width":"160px"},
+		 		{"name":"f", "caption":"Function","width":"200px"},
+				{"name":"a", "caption":"Arguments", "width": "auto"}
+			]
+		},
+		{ "type": "RowLayout", "items": [
+				{"name":"params","type":"ValidationTextBox", "caption":"Commaseperated Args"},
+				{"type":"Button", "caption":"Execute", "onClick":"if(empty($method))echo 'please select method first';else if(!empty($method{'a'})&&($params==''||count(explode(',',$params))!=count(explode(',',$method{'a'})) ) )echo 'Invalid argument count, check your argument input!'; else echo var_export(UGENERIC_CallMethod($id,$method{'s'}.'.'.$method{'f'},$params),true);"}
+  			]
+  		}		
+	],
+	"status":[
+        { "code": 200, "icon": "error", "caption": "Config missing or invalid" },
+        { "code": 201, "icon": "error", "caption": "Host missing or invalid" },
+        { "code": 202, "icon": "error", "caption": "User and/or Password required"}
+        
+    ]
+	
+}

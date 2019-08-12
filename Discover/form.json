@@ -1,0 +1,30 @@
+{
+    "elements": [
+    	{"name":"StartUp", "type":"Label","caption":"if you can read this no devices are discovered! Check out following options and press Discover devices"},
+     	{"name":"TimeUpDown", "type":"Label","caption":"NOTICE The determination takes between 5 and a maximum of 180 seconds, depending on the timeout settings"},
+    	{"type":"RowLayout", "items": [
+	 		{"name":"BindIp", "type":"Select","caption":"Bind Discover to IP", "options":[]},
+	 		{"name":"DiscoverTimeout", "type":"NumberSpinner","caption":"Timeout [1-15]"},
+	 		{"name":"EnableCache", "type":"CheckBox","caption":"Enable Cache"},
+  			{"name":"DiscoverButton", "type":"Button", "caption": "Discover devices", "onClick": "IPS_RequestAction($id,'DISCOVER',true);" },
+	 		{"name":"ProgressBar", "type":"ProgressBar","caption":"0", "visible":false}
+	 	]}
+   	],
+   	"actions":[
+ 	 	{"type":"Configurator", "name":"DiscoverList","caption":"Found"	,"delete":true,
+ 	 	 "columns":[
+	 	 	{"name":"address","caption":"Address", "width":"100px"},
+	 	 	{"name":"name",		"caption":"Name", "width":"auto"},
+	 	 	{"name":"type",	"caption":"Type", "width":"100px"}
+	 	 	
+	
+	 	 ]
+ 	 	},
+   		{ "type": "RowLayout", "items": [
+   				{ "type": "ValidationTextBox", "name": "MHost", "caption": "Url to Device description xml" },
+   				{"type":"Button", "caption": "Import Device", "onClick": "IPS_RequestAction($id,'ADD',$MHost);" }
+   				
+   			]
+   		}	
+   	]
+}
