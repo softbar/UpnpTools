@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<scpd
+  xmlns="urn:schemas-upnp-org:service-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<actionList>
+		<action>
+			<name>X_CIS_Command</name>
+			<argumentList>
+				<argument>
+					<name>CISDATA</name>
+					<direction>in</direction>
+					<relatedStateVariable>X_ARG_TYPE_CISDATA</relatedStateVariable>
+				</argument>
+				<argument>
+					<name>Res_CISDATA</name>
+					<direction>out</direction>
+					<retval />
+					<relatedStateVariable>X_ARG_TYPE_ResCISDATA</relatedStateVariable>
+				</argument>
+			</argumentList>
+		</action>
+	</actionList>
+	<serviceStateTable>
+		<stateVariable sendEvents="no">
+			<name>X_ARG_TYPE_CISDATA</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>X_ARG_TYPE_ResCISDATA</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="yes">
+			<name>X_CISStatus</name>
+			<dataType>string</dataType>
+		</stateVariable>
+	</serviceStateTable>
+</scpd>

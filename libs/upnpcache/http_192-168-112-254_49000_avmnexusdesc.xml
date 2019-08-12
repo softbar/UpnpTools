@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:avmnexus:1</deviceType>
+<friendlyName>gateway</friendlyName>
+<manufacturer>AVM Berlin</manufacturer>
+<manufacturerURL>http://www.avm.de</manufacturerURL>
+<modelDescription>FRITZ!Box 7590</modelDescription>
+<modelName>FRITZ!Box 7590</modelName>
+<modelNumber>avm</modelNumber>
+<modelURL>http://www.avm.de</modelURL>
+<UDN>uuid:535502409-bccb-40e7-8e6c-444E6D5F4C38</UDN>
+<iconList>
+<icon>
+<mimetype>image/gif</mimetype>
+<width>118</width>
+<height>119</height>
+<depth>8</depth>
+<url>/ligd.gif</url>
+</icon>
+</iconList>
+<serviceList>
+<service>
+<serviceType>urn:schemas-any-com:service:avmnexus:1</serviceType>
+<serviceId>urn:any-com:serviceId:avmnexus</serviceId>
+<controlURL>/upnp/control/avmnexus</controlURL>
+<eventSubURL>/upnp/control/avmnexus</eventSubURL>
+<SCPDURL>/avmnexusSCPD.xml</SCPDURL>
+</service>
+</serviceList>
+<presentationURL>http://192.168.112.254</presentationURL>
+</device>
+</root>

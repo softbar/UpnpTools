@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<actionList>
+<action>
+<name>SetLogParam</name>
+<argumentList>
+<argument>
+<name>NewLogPort</name>
+<direction>in</direction>
+<relatedStateVariable>LogPort</relatedStateVariable>
+</argument>
+<argument>
+<name>NewLogLevel</name>
+<direction>in</direction>
+<relatedStateVariable>LogLevel</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+<action>
+<name>GetMaclist</name>
+<argumentList>
+<argument>
+<name>NewMaclist</name>
+<direction>out</direction>
+<relatedStateVariable>Maclist</relatedStateVariable>
+</argument>
+<argument>
+<name>NewMaclistChangeCounter</name>
+<direction>out</direction>
+<relatedStateVariable>MaclistChangeCounter</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+</actionList>
+<serviceStateTable>
+<stateVariable sendEvents="no">
+<name>LogPort</name>
+<dataType>ui2</dataType>
+<defaultValue>0</defaultValue>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>LogLevel</name>
+<dataType>string</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>Maclist</name>
+<dataType>string</dataType>
+</stateVariable>
+<stateVariable sendEvents="yes">
+<name>MaclistChangeCounter</name>
+<dataType>ui2</dataType>
+<defaultValue>0</defaultValue>
+</stateVariable>
+</serviceStateTable>
+</scpd>

@@ -1,0 +1,25 @@
+{
+   	"actions":[
+    	{"name":"StartUp", "type":"Label","caption":"if you can read this no devices are discovered! Check out following options and press Discover devices"},
+     	{"name":"TimeUpDown", "type":"Label","caption":"NOTICE The determination takes between 5 and a maximum of 20-40 seconds, depending on the timeout settings"},
+ 	 	{"type":"PopupButton", "caption":"Discover Devices", "popup": {
+ 	 			"caption":"Discover Settings", "items": [
+		 	 		{"name":"BindToIp", "type":"Select","caption":"Bind Discover to IP", "options":[]},
+			 		{"name":"Timeout", "type":"NumberSpinner","caption":"Timeout [2-15]", "value":7},
+			 		{"name":"EnableCache", "type":"CheckBox","caption":"Enable Cache", "value":true},
+  					{"type":"RowLayout", "items":[
+	  					{"name":"DiscoverButton", "type":"Button", "caption": "Start Discover", "onClick": "IPS_RequestAction($id,'DISCOVER',$BindToIp.','.$Timeout.','.$EnableCache);" },
+		 				{"name":"ProgressBar", "type":"ProgressBar","caption":"0", "visible":false}
+ 	 				]}
+ 	 			]
+ 	 		} 
+ 	 	},	
+ 	 	{"type":"Configurator", "name":"DiscoverList","caption":"Found"	,"delete":true,
+ 	 	 "columns":[
+	 	 	{"name":"address","caption":"Address", "width":"100px"},
+	 	 	{"name":"name",		"caption":"Name", "width":"auto"},
+	 	 	{"name":"type",	"caption":"Type", "width":"100px"}
+	 	 ]
+ 	 	}
+   	]
+}

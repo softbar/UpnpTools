@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<scpd
+  xmlns="urn:schemas-upnp-org:service-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<actionList>
+		<action>
+			<name>X_Tandem</name>
+		</action>
+	</actionList>
+	<serviceStateTable>
+		<stateVariable sendEvents="no">
+			<name>X_TandemNullVariable</name>
+			<dataType>string</dataType>
+		</stateVariable>
+	</serviceStateTable>
+</scpd>

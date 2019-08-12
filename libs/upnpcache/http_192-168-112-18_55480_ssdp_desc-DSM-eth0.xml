@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
+		<friendlyName>nas (DS412+)</friendlyName>
+		<manufacturer>Synology</manufacturer>
+		<manufacturerURL>http://www.synology.com</manufacturerURL>
+		<modelDescription>Synology NAS</modelDescription>
+		<modelName>DS412+</modelName>
+		<modelNumber>DS412+ 6.2-24922</modelNumber>
+		<modelURL>http://www.synology.com</modelURL>
+		<modelType>NAS</modelType>
+		<serialNumber>001132227683</serialNumber>
+		<UDN>uuid:73796E6F-6473-6D00-0000-001132227683</UDN>
+		<serviceList>
+			<service>
+				<URLBase>http://192.168.112.18:55480</URLBase>
+				<serviceType>urn:schemas-dummy-com:service:Dummy:1</serviceType>
+				<serviceId>urn:dummy-com:serviceId:dummy1</serviceId>
+				<controlURL>/dummy</controlURL>
+				<eventSubURL>/dummy</eventSubURL>
+				<SCPDURL>/ssdp/dummy.xml</SCPDURL>
+			</service>
+		</serviceList>
+		<presentationURL>http://192.168.112.18:55480/</presentationURL>
+	</device>
+</root>
+

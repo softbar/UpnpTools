@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:pnpx="http://schemas.microsoft.com/windows/pnpx/2005/11" xmlns:df="http://schemas.microsoft.com/windows/2008/09/devicefoundation" >
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.51</dlna:X_DLNADOC>
+<dlna:X_DLNACAP xmlns:dlna="urn:schemas-dlna-org:device-1-0"></dlna:X_DLNACAP>
+<pv:platformID xmlns:pv="http://www.pv.com/pvns/">Linux 3.3.8-3.8; mips</pv:platformID>
+<manufacturer>TechniSat</manufacturer>
+<manufacturerURL>http://www.technisat.de/</manufacturerURL>
+<modelName>TechniSat DMR</modelName>
+<modelURL>http://www.twonky.com/</modelURL>
+<modelDescription>TechniSat DMR</modelDescription>
+<UPC></UPC><friendlyName>DIGIPAL ISIO HD</friendlyName>
+<modelNumber>8.2.1</modelNumber>
+<serialNumber>8.2.1</serialNumber>
+<presentationURL>http://192.168.112.119:9085/TMRPresentation.html</presentationURL>
+<UDN>uuid:56066f6e-6b79-1d65-a4cf-0008c97100f4</UDN>
+<serviceList>
+<service>
+ <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+ <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+ <SCPDURL>/dev1/srv0.xml</SCPDURL>
+ <eventSubURL>/dev1/srv0/event</eventSubURL>
+ <controlURL>/dev1/srv0/control</controlURL>
+</service>
+<service>
+ <serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+ <serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+ <SCPDURL>/dev1/srv1.xml</SCPDURL>
+ <eventSubURL>/dev1/srv1/event</eventSubURL>
+ <controlURL>/dev1/srv1/control</controlURL>
+</service>
+<service>
+ <serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+ <serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+ <SCPDURL>/dev1/srv2.xml</SCPDURL>
+ <eventSubURL>/dev1/srv2/event</eventSubURL>
+ <controlURL>/dev1/srv2/control</controlURL>
+</service>
+</serviceList>
+<pnpx:X_hardwareId>VEN_0033&amp;DEV_0006&amp;REV_01</pnpx:X_hardwareId>
+<pnpx:X_compatibleId>MS_DigitalMediaDeviceClass_DMR_V001</pnpx:X_compatibleId>
+<pnpx:X_deviceCategory>MediaDevices</pnpx:X_deviceCategory>
+<df:X_deviceCategory>Multimedia.DMR</df:X_deviceCategory>
+</device>
+</root>

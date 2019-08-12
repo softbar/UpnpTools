@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<root
+  xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<av:standardCDS xmlns:av="urn:schemas-sony-com:av">5.0</av:standardCDS>
+		<av:musicRoot xmlns:av="urn:schemas-sony-com:av">0</av:musicRoot>
+		<deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>
+		<friendlyName>Sony-AVR</friendlyName>
+		<manufacturer>Sony Corporation</manufacturer>
+		<manufacturerURL>http://www.sony.net/</manufacturerURL>
+		<modelDescription>MULTI CHANNEL AV RECEIVER</modelDescription>
+		<modelName>STR-DN1050</modelName>
+		<UDN>uuid:5f9ec1b3-ed59-1900-4532-d8d43cd2af47</UDN>
+		<iconList>
+			<icon>
+				<mimetype>image/jpeg</mimetype>
+				<width>48</width>
+				<height>48</height>
+				<depth>24</depth>
+				<url>/device_icon_48.jpg</url>
+			</icon>
+			<icon>
+				<mimetype>image/jpeg</mimetype>
+				<width>120</width>
+				<height>120</height>
+				<depth>24</depth>
+				<url>/device_icon_120.jpg</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>48</width>
+				<height>48</height>
+				<depth>24</depth>
+				<url>/device_icon_48.png</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>120</width>
+				<height>120</height>
+				<depth>24</depth>
+				<url>/device_icon_120.png</url>
+			</icon>
+		</iconList>
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:ContentDirectory</serviceId>
+				<SCPDURL>/ContentDirectory_desc.xml</SCPDURL>
+				<controlURL>/ContentDirectory_ctrl</controlURL>
+				<eventSubURL>/ContentDirectory_evt</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+				<SCPDURL>/ConnectionManager_desc.xml</SCPDURL>
+				<controlURL>/ConnectionManager_ctrl</controlURL>
+				<eventSubURL>/ConnectionManager_evt</eventSubURL>
+			</service>
+		</serviceList>
+		<presentationURL>http://192.168.112.61</presentationURL>
+	</device>
+</root>

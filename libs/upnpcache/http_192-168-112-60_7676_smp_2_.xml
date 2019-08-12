@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:sec="http://www.sec.co.kr/dlna">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:samsung.com:device:MainTVServer2:1</deviceType>
+    <friendlyName>[TV] Samsung</friendlyName>
+    <manufacturer>Samsung Electronics</manufacturer>
+    <manufacturerURL>http://www.samsung.com</manufacturerURL>
+    <modelDescription>Samsung DTV MainTVServer2</modelDescription>
+    <modelName>UE55F6400</modelName>
+    <modelNumber>1.0</modelNumber>
+    <modelURL>http://www.samsung.com</modelURL>
+    <serialNumber>20100621</serialNumber>
+    <UDN>uuid:0c845880-00d2-1000-8d3a-0c891041f72d</UDN>
+    <UPC>123456789012</UPC>
+    <sec:deviceID>7XCAMPY4VEQIO</sec:deviceID>
+    <sec:ProductCap>Browser,Y2013</sec:ProductCap>
+    <serviceList>
+      <service>
+        <serviceType>urn:samsung.com:service:MainTVAgent2:1</serviceType>
+        <serviceId>urn:samsung.com:serviceId:MainTVAgent2</serviceId>
+		<controlURL>/smp_4_</controlURL>
+        <eventSubURL>/smp_5_</eventSubURL>
+		<SCPDURL>/smp_3_</SCPDURL>
+      </service>
+</serviceList>
+</device>
+</root>
